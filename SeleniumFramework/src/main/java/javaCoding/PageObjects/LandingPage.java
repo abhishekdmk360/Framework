@@ -1,15 +1,17 @@
 package javaCoding.PageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage {
+import javaCoding.AbstractComponents.GlobalComponents;
+
+public class LandingPage extends GlobalComponents {
 	WebDriver driver;
 	
 	public LandingPage(WebDriver driver){
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		
@@ -26,6 +28,9 @@ public class LandingPage {
 	@FindBy(id = "login")
 	WebElement loginButton;
 	
+	@FindBy(css = "div[class*='flyInOut'] div[class*='toast']")
+	WebElement toastMessage;
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/");
 	}
@@ -34,9 +39,13 @@ public class LandingPage {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		loginButton.click();
-		Thread.sleep(2000);
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		return productCatalogue;
+	}
+	
+	public String getToastMessage() {
+		waitForElementToBeVisible(toastMessage);
+		return toastMessage.getText();
 	}
 
 }
