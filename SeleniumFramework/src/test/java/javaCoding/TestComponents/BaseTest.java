@@ -7,11 +7,14 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -28,14 +31,23 @@ public class BaseTest {
 		property.load(fis);
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : property.getProperty("browser");
 		
-		if(browserName.equals("chrome")) {
+		if(browserName.contains("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			if(browserName.contains("headless"))
+				options.addArguments("headless");
+			driver = new ChromeDriver(options);
 		}
-		else if(browserName.equals("edge")) {
+		else if(browserName.contains("edge")) {
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			EdgeOptions options = new EdgeOptions();
+			if(browserName.contains("headless"))
+				options.addArguments("headless");
+			driver = new EdgeDriver(options);
 		}
+		
+		if(browserName.contains("headless"))
+			driver.manage().window().setSize(new Dimension(1440, 900));
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.manage().window().maximize();

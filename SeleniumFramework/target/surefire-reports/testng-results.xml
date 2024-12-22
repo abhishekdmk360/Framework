@@ -1,258 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="8" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-22T19:27:30 IST" name="Suite" finished-at="2024-12-22T19:29:09 IST" duration-ms="99378">
+  <suite started-at="2024-12-22T22:12:35 IST" name="Suite" finished-at="2024-12-22T22:12:49 IST" duration-ms="14456">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTesting.loginErrorValidation()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" name="loginErrorValidation" class="javaCoding.Testing.ErrorValidationsTesting"/>
+        <method signature="ErrorValidationsTesting.loginErrorValidation()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@235834f2]" name="loginErrorValidation" class="javaCoding.Testing.ErrorValidationsTesting"/>
       </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="PlaceOrderTesting.submitOrder(java.util.HashMap)[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" name="submitOrder" class="javaCoding.Testing.PlaceOrderTesting"/>
-      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-12-22T19:27:30 IST" name="Error Validations Test" finished-at="2024-12-22T19:28:34 IST" duration-ms="63934">
+    <test started-at="2024-12-22T22:12:35 IST" name="Place Order Test" finished-at="2024-12-22T22:12:35 IST" duration-ms="20">
+    </test> <!-- Place Order Test -->
+    <test started-at="2024-12-22T22:12:35 IST" name="Error Validations Test" finished-at="2024-12-22T22:12:49 IST" duration-ms="14455">
       <class name="javaCoding.Testing.ErrorValidationsTesting">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:27:30 IST" name="launchApplication" finished-at="2024-12-22T19:27:56 IST" duration-ms="26605" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@235834f2]" started-at="2024-12-22T22:12:35 IST" name="launchApplication" finished-at="2024-12-22T22:12:47 IST" duration-ms="12157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="explicitFail()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:27:56 IST" name="explicitFail" finished-at="2024-12-22T19:27:57 IST" duration-ms="841" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at javaCoding.Testing.ErrorValidationsTesting.explicitFail(ErrorValidationsTesting.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- explicitFail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:27:57 IST" name="quitDriver" finished-at="2024-12-22T19:27:58 IST" duration-ms="1154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:27:58 IST" name="launchApplication" finished-at="2024-12-22T19:28:10 IST" duration-ms="11363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="explicitFail()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:28:10 IST" name="explicitFail" finished-at="2024-12-22T19:28:11 IST" duration-ms="1282" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at javaCoding.Testing.ErrorValidationsTesting.explicitFail(ErrorValidationsTesting.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- explicitFail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:28:12 IST" name="quitDriver" finished-at="2024-12-22T19:28:18 IST" duration-ms="6011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:28:18 IST" name="launchApplication" finished-at="2024-12-22T19:28:30 IST" duration-ms="12850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:28:30 IST" name="loginErrorValidation" finished-at="2024-12-22T19:28:32 IST" duration-ms="1293" status="PASS">
+        <test-method signature="loginErrorValidation()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@235834f2]" started-at="2024-12-22T22:12:47 IST" name="loginErrorValidation" finished-at="2024-12-22T22:12:48 IST" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@2254127a]" started-at="2024-12-22T19:28:32 IST" name="quitDriver" finished-at="2024-12-22T19:28:34 IST" duration-ms="1950" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.ErrorValidationsTesting@235834f2]" started-at="2024-12-22T22:12:48 IST" name="quitDriver" finished-at="2024-12-22T22:12:49 IST" duration-ms="1384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- javaCoding.Testing.ErrorValidationsTesting -->
     </test> <!-- Error Validations Test -->
-    <test started-at="2024-12-22T19:27:30 IST" name="Place Order Test" finished-at="2024-12-22T19:29:09 IST" duration-ms="99378">
-      <class name="javaCoding.Testing.PlaceOrderTesting">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:27:30 IST" name="launchApplication" finished-at="2024-12-22T19:27:57 IST" duration-ms="26807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginMessageValidation()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:27:57 IST" name="loginMessageValidation" finished-at="2024-12-22T19:28:03 IST" duration-ms="6747" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginMessageValidation -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:03 IST" name="quitDriver" finished-at="2024-12-22T19:28:06 IST" duration-ms="3082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:07 IST" name="launchApplication" finished-at="2024-12-22T19:28:19 IST" duration-ms="11913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:19 IST" name="submitOrder" data-provider="getData" finished-at="2024-12-22T19:28:27 IST" duration-ms="8562" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Abhishek@88, email=abhishekdmk@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:27 IST" name="quitDriver" finished-at="2024-12-22T19:28:30 IST" duration-ms="2913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:30 IST" name="launchApplication" finished-at="2024-12-22T19:28:36 IST" duration-ms="5348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:36 IST" name="submitOrder" data-provider="getData" finished-at="2024-12-22T19:28:51 IST" duration-ms="14932" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Iamking@000, email=anshika@gmail.com, productName=ZARA COAT 3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:51 IST" name="quitDriver" finished-at="2024-12-22T19:28:51 IST" duration-ms="399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:51 IST" name="launchApplication" finished-at="2024-12-22T19:28:57 IST" duration-ms="5891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="orderHistoryCheck()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:28:57 IST" name="orderHistoryCheck" finished-at="2024-12-22T19:29:08 IST" depends-on-methods="javaCoding.Testing.PlaceOrderTesting.submitOrder" duration-ms="11489" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[class*='flyInOut'] div[class*='toast']' (tried for 5 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[class*='flyInOut'] div[class*='toast']' (tried for 5 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at javaCoding.AbstractComponents.GenericComponents.waitForElementToBeVisible(GenericComponents.java:25)
-at javaCoding.PageObjects.LandingPage.getToastMessage(LandingPage.java:47)
-at javaCoding.Testing.PlaceOrderTesting.orderHistoryCheck(PlaceOrderTesting.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='flyInOut'] div[class*='toast']"}
-  (Session info: chrome=131.0.6778.140)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e6be51adac6e47cd2ceb3d6737ee0527, findElement {using=css selector, value=div[class*='flyInOut'] div[class*='toast']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57143}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57143/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e6be51adac6e47cd2ceb3d6737ee0527
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 23 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderHistoryCheck -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:javaCoding.Testing.PlaceOrderTesting@28dcca0c]" started-at="2024-12-22T19:29:09 IST" name="quitDriver" finished-at="2024-12-22T19:29:09 IST" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- javaCoding.Testing.PlaceOrderTesting -->
-    </test> <!-- Place Order Test -->
   </suite> <!-- Suite -->
 </testng-results>
